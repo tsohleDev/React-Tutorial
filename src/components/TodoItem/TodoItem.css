@@ -1,0 +1,9 @@
+li {
+  display: flex;
+  list-style: none;
+}
+
+.itemIn {
+  margin: 0 5vw;
+  background-color: transparent;
+}
