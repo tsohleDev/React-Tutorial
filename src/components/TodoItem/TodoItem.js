@@ -9,11 +9,25 @@ function TodoItem(props) {
     onset(list);
   };
 
+  const tick = (event) => {
+    const booli = event.target.checked;
+
+    const list = todos.map((item) => {
+      if (item.id === todo.id) {
+        return { ...item, completed: booli };
+      }
+
+      return item;
+    });
+
+    onset(list);
+  };
+
   return (
     <li>
-      <input className="itemIn" type="checkbox" checked={todo.completed} />
+      <input className="itemIn" type="checkbox" onChange={tick} />
       {todo.text}
-      <input className="itemIn" type="button" onClick={() => { deleteTodo(todo.id); }} value="Delete" />
+      <input className="itemIn" type="button" onClick={() => { tick(); deleteTodo(todo.id); }} value="Delete" />
     </li>
   );
 }

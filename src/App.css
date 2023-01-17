@@ -7,9 +7,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
+  width: 5%;
   height: 100vh;
   background-color: aqua;
+}
+
+.open {
+  width: 30%;
 }
 
 .container {

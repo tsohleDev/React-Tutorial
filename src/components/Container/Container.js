@@ -4,7 +4,7 @@ import Input from '../Input/Input';
 import './Container.css';
 
 function Container() {
-  const [todos, setTodos] = useState([{ id: 1, text: 'test', completed: false }]);
+  const [todos, setTodos] = useState([]);
 
   return (
     <div className="container">
