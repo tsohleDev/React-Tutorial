@@ -5,11 +5,10 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   width: 5%;
   height: 100vh;
-  background-color: aqua;
+  background-color: rgb(35, 149, 225);
 }
 
 .open {
